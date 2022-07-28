@@ -18,7 +18,7 @@ p{
     font-weight: 400;
 }
 
-.container{
+main{
     background-color:#1F2630;
     max-width: 320px;
     height: 340px;
@@ -78,7 +78,9 @@ li:hover{
     color: white;
 }
 
-#submit{
+.submit{
+    text-transform: uppercase;
+    color: white;
     background-color: #FC7613;
     text-align: center;
     margin-top: 20px;
@@ -86,7 +88,7 @@ li:hover{
     border-radius: 20px;
 }
 
-#submit:hover{
+.submit:hover{
     background-color: white;
     color:#FC7613 ;
     cursor: pointer;

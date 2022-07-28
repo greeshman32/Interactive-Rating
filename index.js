@@ -1,5 +1,5 @@
 let selected;
-let val='0';
+let val=undefined;
 
 const rate=document.getElementById("select");
 const submitButton=document.getElementById("submit");
@@ -17,13 +17,14 @@ const changeStyle=(event)=>{
             val=selected.innerText;
             }
             else{ //this will unselect the event
-                val='0';
+                val=undefined;
                 selected=undefined;
             }
         }
 };
 
 const submit=()=>{
+        if(val!=undefined){
             let ratingContainer=document.getElementsByClassName("rating");
             ratingContainer[0].style.transform='translateY(-200%)';
 
@@ -32,6 +33,7 @@ const submit=()=>{
 
             let addrating=document.getElementById("add-rating");
             addrating.textContent=val;
+        }
 };
 
 
